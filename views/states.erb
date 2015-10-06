@@ -1,0 +1,17 @@
+<h1>State List</h1>
+
+<p>here is a list of states...</p>
+
+<select name="State">
+	<option value= <% states.each do |state|
+					puts state.name
+					end%>>
+			<%= states.each do |stateid|
+				puts state.in
+				end%>
+	</option>
+</select>
+
+
+<!-- iterate through each state in the array and put them into list items individually -->
+
