@@ -10,15 +10,18 @@ end
 get '/states' do
   # code!
 
-  states=[Nebraska,NE, New York, NY, New Jersey, NJ, New Hampshire , NH, North Carolina, NC]
-  states.split(',')
-  states.strip!
-  state={id: states[1], name: states[0]}
-  states << state
-  state.name.sort!
-
-
-
+  @states = []
+  state = {id: 'IN', name: 'Indiana'}
+  @states << state
+  state = {id: 'MI', name: 'Michigan'}
+  @states << state
+  state = {id: 'NJ', name: 'New Jersey'}
+  @states << state
+  state4 = {id: 'NY', name: 'New York'}
+  @states << state
+  state = {id: 'AZ', name: 'Arizona'}
+  @states << state
+  @states.sort_by! {|state| state[:name]}
 
   erb :states, layout: :main
 end
