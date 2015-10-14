@@ -3,12 +3,9 @@
 <p>Here is a list of states...</p>
 <form>
 <select name="State">
-	<option value= <% @states.each do |state| %>
-					<%= state[:id]%>
-					>
-					<%= state[:name]%>
-					<%end%>
-	</option>
+	<% @states.each do |state| %>
+	<option value= <%= state[:id]%>><%= state[:name]%></option>
+	<%end%>
 </select>
 </form>
 
