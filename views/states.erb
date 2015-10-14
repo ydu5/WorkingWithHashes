@@ -2,6 +2,9 @@
 
 <p>Here is a list of states...</p>
 <form>
+
+<!-- the Ruby loop should be around the option tag
+    And then insert the values in the hash into where the id and name should be -->
 <select name="State">
 	<% @states.each do |state| %>
 	<option value= <%= state[:id]%>><%= state[:name]%></option>
