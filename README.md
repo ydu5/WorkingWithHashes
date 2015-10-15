@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Working with Arrays
 Sinatra app to work with arrays
 
@@ -44,3 +45,6 @@ Sinatra app to work with arrays
 3. Push you changes to github with *git push origin master*
 4. Tag your project with *git tag completed -am 'another message'
 5. Push your tag to github git push --tags
+=======
+# WorkingWithArrays
+>>>>>>> fd58c9b945e39a2b9cc301ad638029e7d3cbc819
