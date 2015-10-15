@@ -17,7 +17,7 @@ get '/states' do
   @states << state
   state = {id: 'NJ', name: 'New Jersey'}
   @states << state
-  state4 = {id: 'NY', name: 'New York'}
+  state = {id: 'NY', name: 'New York'}
   @states << state
   state = {id: 'AZ', name: 'Arizona'}
   @states << state
